@@ -1,0 +1,13 @@
+{% extends "base.html.j2" %}
+
+{% block title %}
+    Sitemap
+{% endblock %}
+
+{% block body %}
+    <ul>
+    {% for k, v in urls.items() %}
+        <li>{{ k }} : {{ v }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
